@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 using Richard.Data;
 using Richard.Models;
 
+
+namespace Richard.Repository
+
 {
     class CategoryRepository
     {
-        public readonly AppDbContext dbContext;
+        public readonly AppDbContext dbContext = new AppDbContext();
 
         //method to fetch all the record in the category table
         public List<Category> Categories()
@@ -17,10 +20,11 @@ using Richard.Models;
             return dbContext.Categories.ToList();
         }
 
-        public void CreateCategory(Category cateogory)
+        public Category CreateCategory(Category cateogory)
         {
             dbContext.Categories.Add(cateogory);
             dbContext.SaveChanges();
+            return cateogory;
         }
 
         public Category? GetCategory(int id)
@@ -46,9 +50,9 @@ using Richard.Models;
             return category;
         }
 
-        public void DeleteCategory(int id)
+        public void DeleteCategory(Category category)
         {
-            dbContext.Remove(id);
+            dbContext.Remove(category);
             dbContext.SaveChanges();
         }
     }

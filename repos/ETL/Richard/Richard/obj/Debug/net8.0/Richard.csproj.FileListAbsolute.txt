@@ -97,3 +97,4 @@ C:\Users\richard.oloyede\source\repos\ETL\Richard\Richard\obj\Debug\net8.0\refin
 C:\Users\richard.oloyede\source\repos\ETL\Richard\Richard\obj\Debug\net8.0\Richard.pdb
 C:\Users\richard.oloyede\source\repos\ETL\Richard\Richard\obj\Debug\net8.0\Richard.genruntimeconfig.cache
 C:\Users\richard.oloyede\source\repos\ETL\Richard\Richard\obj\Debug\net8.0\ref\Richard.dll
+C:\Users\richard.oloyede\source\repos\ETL\Richard\Richard\obj\Debug\net8.0\Richard.sourcelink.json

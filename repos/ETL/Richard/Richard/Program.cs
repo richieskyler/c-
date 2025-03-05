@@ -7,6 +7,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Richard.Models;
+using Richard.Services;
 
 namespace HelloWorld
 {
@@ -162,16 +164,102 @@ namespace HelloWorld
             //cat.makeSound();
 
 
-            IPerson person = new PersonInterface();
+            //IPerson person = new PersonInterface();
 
-            person.die();
-            person.eat();
-            person.talk();
-            person.walk();
+            //person.die();
+            //person.eat();
+            //person.talk();
+            //person.walk();
 
-          
+//----------------------------------------Category Service
+
+            CategoryService categoryService = new CategoryService();
+
+            //--------------------------------------------------------------------------create category
+
+            //Category category = new Category();
+
+            //category.Name = "Clothings";
+            //category.Description = "Apparel such as shirts, pants, dresses, and outerwear.";
+
+            //Category? result = categoryService.CreateCategory(category, out string messgae);
+
+            //if (result == null)
+            //{
+            //    Console.WriteLine(messgae);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(messgae + " " + category.Id + " " + category.Name + " " + category.Description);
+            //}
+            //-----------------------------------------------------------------get category
+            //Category result = categoryService.GetCategory(1, out string message);
+            //Console.WriteLine(message);
+            //Console.WriteLine("Name:" + " " + result.Name + " " + "Description:" + " " + result.Description);
+
+            //---------------------------------------------------------------------get all categories
+            //List<Category> result = categoryService.Categories();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine("Name:" + " " + item.Name + " " + "Description:" + " " + item.Description);
+            //}
 
 
+
+            //----------------------------------------------------------Product Service
+            //----------------------------------------------------------Create product
+
+            //ProductService productService = new ProductService();
+
+            //Product product = new Product();
+
+            //product.Name = "Blouse";
+            //product.Description = "Short Gown";
+            //product.Price = 3500;
+            //product.Quantity = 1;
+            //product.CreatedAt = DateTime.UtcNow;
+            //product.CategoryId = 3;
+
+            //Product? result = productService.CreateProduct(product, out string messgae);
+
+            //if (result == null)
+            //{
+            //    Console.WriteLine(messgae);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(messgae + " " + product.id + " " + product.Name + " " + product.Description + " " + product.Price + " " + product.Quantity
+            //        );
+            //}
+
+            //-----------------------------delete categoryid
+
+            //bool result = categoryService.DeleteCategory(2, out string message);
+            //if (result)
+            //{
+            //    Console.WriteLine(message);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(message);
+            //}
+
+
+            //--------------------------------- delete productid 
+
+            //bool result = productService.DeleteProduct(2, out string message);
+            //if (result)
+            //{
+            //    Console.WriteLine(message);
+            //}
+            //else
+            //{
+            //    Console.WriteLine(message);
+            //}
+
+
+            //--------------------------------------------------------
 
 
 
@@ -259,6 +347,6 @@ namespace HelloWorld
 
 
         }
-        
-    }
+
+}
 }
