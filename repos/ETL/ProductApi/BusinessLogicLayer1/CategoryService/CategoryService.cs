@@ -44,11 +44,11 @@ namespace BusinessLogicLayer.CategoryService
 
             
 
-        public bool DeleteCategory(int id)
+        public bool DeleteCategory(int id, out string message)
         {
             if(id <= 0)
             {
-
+                message = "Invalid";
                 return false;
             }
 
@@ -56,10 +56,12 @@ namespace BusinessLogicLayer.CategoryService
             
             if(category == null)
             {
+                message = "Return a Number";
                 return false;
             }
 
             _categoryRepository.Delete(category);
+            message = "Deleted Successfully";
             return true;
 
         }

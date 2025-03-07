@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "category",
-        "Type": "DomainLayer.Models.Category",
+        "Type": "DomainLayer.DTO.UpdateRequestCategoryDto",
         "IsRequired": true
       }
     ],

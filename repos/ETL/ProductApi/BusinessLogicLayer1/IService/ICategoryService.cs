@@ -28,7 +28,7 @@ namespace BusinessLogicLayer.IService
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        bool DeleteCategory(int id);
+        bool DeleteCategory(int id, out string message);
 
 
         /// <summary>

@@ -17,6 +17,7 @@ namespace BusinessLogicLayer.MapperMethods
             {
                 Name = createRequestCategoryDto.Name,
                 Description = createRequestCategoryDto.Description,
+                CreatedAt =  DateTime.UtcNow
             };
         }
 
@@ -29,6 +30,25 @@ namespace BusinessLogicLayer.MapperMethods
                 Description = category.Description,
                 CreatedAt = category.CreatedAt,
                 UpdatedAt = category.UpdateAt
+            };
+        }
+
+        public Category MapUpdateCategoryRequestToCategory(UpdateRequestCategoryDto updateRequestCategoryDto)
+        {
+            return new Category
+            {
+                Id  = updateRequestCategoryDto.Id,
+                Name = updateRequestCategoryDto.Name,
+                Description = updateRequestCategoryDto.Description,
+               
+            };
+        }
+
+        public Category MapDeleteCategoryRequestToCategory(DeleteRequestCategoryDto deleteRequestCategoryDto)
+        {
+            return new Category
+            {
+                Id = deleteRequestCategoryDto.Id
             };
         }
     }

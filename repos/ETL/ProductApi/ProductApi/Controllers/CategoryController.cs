@@ -57,21 +57,44 @@ namespace ProductApi.Controllers
                 return BadRequest(message);
             }
 
-            CategoryDto categoryDto = _categoryMapper.MapCategoryToCategoryDto(createdCategory);
-            return Ok(categoryDto);
+            CategoryDto CreatedCategoryDto = _categoryMapper.MapCategoryToCategoryDto(createdCategory);
+            return Ok(CreatedCategoryDto);
         }
 
         [HttpPost]
-        public IActionResult UpdateCategory([FromBody]Category category)
+        public IActionResult UpdateCategory([FromBody]UpdateRequestCategoryDto category)
         {
-            Category? categoryUpdated = _categoryService.UpdateCategory(category, out string message);
+            Category mappedCategory = _categoryMapper.MapUpdateCategoryRequestToCategory(category);
+            
+            Category? categoryUpdated = _categoryService.UpdateCategory(mappedCategory, out string message);
 
             if(categoryUpdated is null)
             {
                 return BadRequest(message);
             }
 
-            return Ok(categoryUpdated);
+            CategoryDto UpdatedCategoryDto = _categoryMapper.MapCategoryToCategoryDto(categoryUpdated);
+
+            return Ok(UpdatedCategoryDto);
         }
+
+        [HttpDelete]
+        public  IActionResult DeleteCategory([FromBody]DeleteRequestCategoryDto category)
+        {
+            Category mappedCategory = _categoryMapper.MapDeleteCategoryRequestToCategory(category);
+            
+             bool categoryDeleted = _categoryService.DeleteCategory(mappedCategory.Id, out string message);
+
+            return Ok(categoryDeleted);
+
+
+
+        }
+
+
+
+
+
+
     }
 }
