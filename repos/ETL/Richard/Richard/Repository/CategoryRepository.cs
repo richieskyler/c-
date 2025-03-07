@@ -47,7 +47,7 @@ namespace Richard.Repository
             dbContext.Categories.Update(existingCategory);
             dbContext.SaveChanges();
 
-            return category;
+            return existingCategory;
         }
 
         public void DeleteCategory(Category category)

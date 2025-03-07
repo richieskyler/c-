@@ -12,7 +12,7 @@ namespace DomainLayer.Models
         public string Description { get; set; }
         public int Quantity { get; set; }
         public double Price { get; set; }
-        public int MyProperty { get; set; }
+       
 
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
