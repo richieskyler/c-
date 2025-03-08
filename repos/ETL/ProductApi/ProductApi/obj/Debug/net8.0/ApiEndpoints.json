@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "ProductApi.Controllers.CategoryController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Category/DeleteCategory",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "DomainLayer.DTO.DeleteRequestCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProductApi.Controllers.CategoryController",
     "Method": "GetById",
     "RelativePath": "api/Category/GetById",
     "HttpMethod": "GET",

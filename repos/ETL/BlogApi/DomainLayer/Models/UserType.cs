@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models
 {
-    public class UserType
+    public class UserType :BaseModel
     {
-        public int Id { get; set; }
-        public string Type { get; set; }
+        
+        public string? UserTypeName { get; set; }
     }
 }

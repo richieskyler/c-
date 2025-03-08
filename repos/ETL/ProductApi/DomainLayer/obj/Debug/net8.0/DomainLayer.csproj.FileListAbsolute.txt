@@ -10,3 +10,15 @@ C:\Users\richard.oloyede\source\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.
 C:\Users\richard.oloyede\source\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
 C:\Users\richard.oloyede\source\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
 C:\Users\richard.oloyede\source\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\bin\Debug\net8.0\DomainLayer.deps.json
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\bin\Debug\net8.0\DomainLayer.dll
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\bin\Debug\net8.0\DomainLayer.pdb
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfoInputs.cache
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfo.cs
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.CoreCompileInputs.cache
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.sourcelink.json
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\ProductApi\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll

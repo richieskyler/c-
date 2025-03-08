@@ -30,14 +30,14 @@ namespace DataAccessLayer.Repositries
 
         public void Delete(Category category)
         {
-            _applicationDbContext.Remove(category);
-            _applicationDbContext.SaveChanges(category);
+            _applicationDbContext.Categories.Remove(category);
+            _applicationDbContext.SaveChanges();
         }
 
         public Category? Get(int id)
         {
             Category? category = _applicationDbContext.Categories.Find(id);
-            return null;
+            return category;
         }
 
         public List<Category> Get()

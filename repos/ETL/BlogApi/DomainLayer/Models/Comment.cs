@@ -9,15 +9,17 @@ namespace DataAccessLayer.Models
 {
     public class Comment : BaseModel
     {
-        public string Content { get; set; }
+        public string? Content { get; set; }
 
 
-        public Post Post { get; set; }
+        
         [ForeignKey("PostId")]
+        public Post? Post { get; set; }
         public int PostId { get; set; }
 
-        public User User { get; set; }
+       
         [ForeignKey("UserId")]
+        public User? User { get; set; }
         public int UserId { get; set; }
     }
 }

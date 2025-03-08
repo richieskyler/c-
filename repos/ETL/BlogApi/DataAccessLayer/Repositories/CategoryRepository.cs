@@ -19,6 +19,7 @@ namespace DataAccessLayer.Repositories
             _applicationDbContext = applicationDbContext;
         }
 
+        //Method to create category
         public Category Create(Category category)
         {
             _applicationDbContext.Categories.Add(category);
@@ -26,25 +27,42 @@ namespace DataAccessLayer.Repositories
             return category;
         }
 
+        //Method to delete category
         public void Delete(Category category)
         {
             _applicationDbContext.Remove(category);
             _applicationDbContext.SaveChanges();
         }
 
+        //Method to get all category in the CategoryTable
         public List<Category> Get()
         {
-            return 
+            return _applicationDbContext.Categories.ToList();
         }
 
+        //Method to get a category based on the Id
         public Category? Get(int id)
         {
-            throw new NotImplementedException();
+            Category? category = _applicationDbContext.Categories.Find();
+            return category;
         }
 
+        //Method for updating category details
         public Category? Update(Category category)
         {
-            throw new NotImplementedException();
+
+            //Finding the category to update by the id
+            Category? existingCategory = _applicationDbContext.Categories.Find(category.Id);
+
+            //Updating the existing category and Saving the changes
+            existingCategory.Name = category.Name;
+            existingCategory.Description = category.Description;
+
+            
+            _applicationDbContext.Categories.Update(existingCategory);
+            _applicationDbContext.SaveChanges();
+            return category;
+
         }
     }
 }

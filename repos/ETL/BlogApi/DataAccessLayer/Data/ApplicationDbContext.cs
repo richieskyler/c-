@@ -14,7 +14,7 @@ namespace DataAccessLayer.Data
         {
         }
 
-        public DbSet<User> Authors { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<UserType> UserTypes { get; set; }

@@ -10,22 +10,18 @@ namespace DataAccessLayer.Models
     public class Post : BaseModel
     {
        
-        public string Content { get; set; }
-        
+        public string? Content { get; set; }
 
-        // Navigation property - gives you access to the full Category object
-        public Category Category { get; set; }
 
         // Foreign key property - stores the ID value of the related Category
+        public Category? Category { get; set; }
         [ForeignKey("CategoryId")]
         public int CategoryId { get; set; }
-
-
-        // Navigation property - gives you access to the full Category object
-        public User User { get; set; }
+        
 
         // Foreign key property - stores the ID value of the related Category
         [ForeignKey("UserId")]
+        public User? User { get; set; }
         public int UserId { get; set; }
 
 

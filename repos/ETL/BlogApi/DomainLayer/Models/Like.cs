@@ -7,16 +7,15 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Models
 {
-    public class Like
+    public class Like : BaseModel
     {
-        public int Id { get; set; }
-        public DateTime CreatedAt { get; set; }
+        
 
-        public Post Post { get; set; }
+        public Post? Post { get; set; }
         [ForeignKey("PostId")]
         public int PostId { get; set; }
 
-        public User User { get; set; }
+        public User? User { get; set; }
         [ForeignKey("UserId")]
         public int UserId { get; set; }
     }
