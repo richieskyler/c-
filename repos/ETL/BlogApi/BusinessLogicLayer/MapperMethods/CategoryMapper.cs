@@ -11,7 +11,7 @@ namespace BusinessLogicLayer.MapperMethods
 {
     public class CategoryMapper : ICategoryMapper
     {
-
+        // Maps a Category entity to a CategoryDto for returning category data.
         public CategoryDto? MapCategoryToCategoryDto(Category category)
         {
             return new CategoryDto
@@ -24,6 +24,7 @@ namespace BusinessLogicLayer.MapperMethods
             };
         }
 
+        // Maps an UpdateCategoryRequestDto to a Category entity for updating an existing category.
         public Category MapUpdateCategoryRequestDtoToCategory(UpdateCategoryRequestDto updateCategoryRequestDto)
         {
             return new Category
@@ -31,10 +32,11 @@ namespace BusinessLogicLayer.MapperMethods
                 Id = updateCategoryRequestDto.Id,
                 Name = updateCategoryRequestDto.Name,
                 Description = updateCategoryRequestDto.Description,
-
+                UpdatedAt = DateTime.UtcNow
             };
         }
 
+        // Maps a DeleteCategoryRequestDto to a Category entity for deleting an existing category.
         public Category MapDeleteCategoryRequestDtoToCategory(DeleteCategoryRequestDto deleteCategoryRequestDto)
         {
             return new Category
@@ -43,6 +45,7 @@ namespace BusinessLogicLayer.MapperMethods
             };
         }
 
+        // Maps a CreateCategoryRequestDto to a Category entity for creating a new category.
         public Category MapCreateCategoryRequesDtoCategory(CreateCategoryRequestDto createCategoryRequestDto)
         {
             return new Category

@@ -11,8 +11,8 @@ namespace DomainLayer.DTO.LikeDto
     public class LikeDto
     {
         public int Id { get; set; }
-        public DateTime Created_at { get; set; }
-        public DateTime Updated_at { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
         public Post? Post { get; set; }
         [ForeignKey("PostId")]
         public int PostId { get; set; }

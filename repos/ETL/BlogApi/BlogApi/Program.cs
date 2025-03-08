@@ -1,3 +1,5 @@
+using BusinessLogicLayer.IMapperMethodsInterface;
+using BusinessLogicLayer.MapperMethods;
 using DataAccessLayer.Data;
 using DataAccessLayer.IRepositories;
 using DataAccessLayer.Repositories;
@@ -15,6 +17,12 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserTypeRepository, UserTypeRepository>();
 builder.Services.AddScoped<ILikeRepository, LikeRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+builder.Services.AddScoped<ICategoryMapper, CategoryMapper>();
+builder.Services.AddScoped<ICommentMapper, CommentMapper>();
+builder.Services.AddScoped<ILikeMapper, LikeMapper>();
+builder.Services.AddScoped<IPostMapper, PostMapper>();
+builder.Services.AddScoped<IUserMapper, UserMapper>();
+builder.Services.AddScoped<IUserTypeMapper, UserTypeMapper>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

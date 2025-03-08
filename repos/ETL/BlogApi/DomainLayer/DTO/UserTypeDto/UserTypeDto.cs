@@ -9,8 +9,8 @@ namespace DomainLayer.DTO.UserTypeDto
     public class UserTypeDto
     {
         public int Id { get; set; }
-        public DateTime Created_at { get; set; }
-        public DateTime Updated_at { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
         public string? UserTypeName { get; set; }
     }
 }

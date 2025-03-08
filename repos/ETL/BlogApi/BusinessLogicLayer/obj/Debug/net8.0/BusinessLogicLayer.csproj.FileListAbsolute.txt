@@ -10,3 +10,12 @@ C:\Users\richard.oloyede\source\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\n
 C:\Users\richard.oloyede\source\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
 C:\Users\richard.oloyede\source\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb
 C:\Users\richard.oloyede\source\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\ref\BusinessLogicLayer.dll
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.sourcelink.json
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.dll
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
+C:\Users\Richard\Desktop\C#\c-\repos\ETL\BlogApi\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb

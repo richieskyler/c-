@@ -12,8 +12,8 @@ namespace DomainLayer.DTO.PostDto
     {
 
         public int Id { get; set; }
-        public DateTime Created_at { get; set; }
-        public DateTime Updated_at { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
         public string? Content { get; set; }
 
         // Foreign key property - stores the ID value of the related Category
