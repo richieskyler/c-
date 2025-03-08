@@ -16,11 +16,11 @@ namespace BusinessLogicLayer.MapperMethods
         {
             return new Post
             {
-                Id = createPostRequestDto.UserId,
                 Content = createPostRequestDto.Content,
                 CategoryId = createPostRequestDto.CategoryId,
-                UserId = createPostRequestDto.UserId,
-                CreatedAt = DateTime.UtcNow
+                UserTypeId = createPostRequestDto.UserTypeId,
+                CreatedAt = DateTime.UtcNow,
+                UserId = createPostRequestDto.UserId
             };
         }
 
@@ -41,7 +41,7 @@ namespace BusinessLogicLayer.MapperMethods
                 Id = post.UserId,
                 Content = post.Content,
                 CategoryId = post.CategoryId,
-                UserId = post.UserId,
+                UserTypeId = post.UserTypeId,
                 CreatedAt = post.CreatedAt,
                 UpdatedAt = post.UpdatedAt
             };
@@ -61,4 +61,4 @@ namespace BusinessLogicLayer.MapperMethods
         }
     }
 }
-}
+

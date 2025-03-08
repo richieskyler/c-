@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using DataAccessLayer.Models;
 
@@ -16,11 +17,13 @@ namespace DomainLayer.DTO.CommentDto
         public DateTime UpdatedAt { get; set; }
 
         [ForeignKey("PostId")]
+        [JsonIgnore]
         public Post? Post { get; set; }
         public int PostId { get; set; }
 
 
         [ForeignKey("UserId")]
+        [JsonIgnore]
         public User? User { get; set; }
         public int UserId { get; set; }
     }

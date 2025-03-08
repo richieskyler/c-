@@ -20,12 +20,18 @@ namespace DataAccessLayer.Models
         
 
         // Foreign key property - stores the ID value of the related Category
+        [ForeignKey("UserTypeId")]
+        public UserType? UserType { get; set; }
+        public int UserTypeId { get; set; }
+
+
+        // Foreign key property - stores the ID value of the related Category
         [ForeignKey("UserId")]
         public User? User { get; set; }
         public int UserId { get; set; }
 
 
 
-        
+
     }
 }
