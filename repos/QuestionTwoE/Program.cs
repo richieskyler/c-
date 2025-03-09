@@ -1,30 +1,30 @@
 ﻿using System;
+using System.Linq;
 
-namespace FactorialCalculatorApp
+namespace MaximumNumberFinder
 {
     class Program
     {
         static void Main()
         {
-            // Initialize factorial result to 1 (since factorial of 0 is 1)
-            int factorial = 1;
+            // Prompt the user to enter a list of numbers separated by commas
+            Console.WriteLine("Enter a list of numbers separated by commas:");
+            string listOfNums = Console.ReadLine();
 
-            // Prompt the user to enter a number
-            Console.WriteLine("Enter a Number:");
-            int value = Convert.ToInt32(Console.ReadLine());
+            // Split the input string into an array of number strings
+            string[] lists = listOfNums.Split(',');
 
-            // Store the original value for displaying results
-            int num = value;
+            // Convert the string array into an integer array
+            int[] numLists = lists.Select(int.Parse).ToArray();
 
-            // Loop to calculate the factorial of the given number
-            for (int i = 1; i <= num; i++)
-            {
-                factorial *= value; // Multiply the factorial by the current value
-                value--; // Decrease the value for the next iteration
-            }
+            // Sort the array in ascending order
+            Array.Sort(numLists);
 
-            // Display the factorial result
-            Console.WriteLine($"{num}! = {factorial}");
+            // Get the last element in the sorted array, which is the maximum number
+            int maxNum = numLists[numLists.Length - 1];
+
+            // Display the maximum number
+            Console.WriteLine("The Maximum Number is: " + maxNum);
         }
     }
 }

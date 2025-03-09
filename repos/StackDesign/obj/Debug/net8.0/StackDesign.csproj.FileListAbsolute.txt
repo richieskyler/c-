@@ -1,0 +1,14 @@
+C:\Users\Richard\source\repos\StackDesign\bin\Debug\net8.0\StackDesign.exe
+C:\Users\Richard\source\repos\StackDesign\bin\Debug\net8.0\StackDesign.deps.json
+C:\Users\Richard\source\repos\StackDesign\bin\Debug\net8.0\StackDesign.runtimeconfig.json
+C:\Users\Richard\source\repos\StackDesign\bin\Debug\net8.0\StackDesign.dll
+C:\Users\Richard\source\repos\StackDesign\bin\Debug\net8.0\StackDesign.pdb
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\StackDesign.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\StackDesign.AssemblyInfoInputs.cache
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\StackDesign.AssemblyInfo.cs
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\StackDesign.csproj.CoreCompileInputs.cache
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\StackDesign.dll
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\refint\StackDesign.dll
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\StackDesign.pdb
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\StackDesign.genruntimeconfig.cache
+C:\Users\Richard\source\repos\StackDesign\obj\Debug\net8.0\ref\StackDesign.dll

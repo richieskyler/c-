@@ -1,25 +1,40 @@
 ﻿using System;
 
-namespace NumberComparisonApp
+namespace SumCalculatorApp
 {
     class Program
     {
         static void Main()
         {
-            Console.WriteLine("Enter First Number:");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            // Initialize a variable to store the sum of entered numbers
+            int sum = 0;
 
-            Console.WriteLine("Enter Second Number:");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            // Infinite loop to continuously ask for user input
+            while (true)
+            {
+                Console.WriteLine("Enter a number (or type 'ok' to finish):");
+                string value = Console.ReadLine();
 
-            if (num1 > num2)
-            {
-                Console.WriteLine("The Maximum Number is: " + num1);
+                // Check if the user entered "ok" to stop the loop
+                if (value.ToLower() == "ok")
+                {
+                    break; // Exit the loop
+                }
+
+                try
+                {
+                    // Convert user input to an integer and add it to the sum
+                    int num = Convert.ToInt32(value);
+                    sum += num;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Invalid input. Please enter a valid number or type 'ok' to stop.");
+                }
             }
-            else
-            {
-                Console.WriteLine("The Maximum Number is: " + num2);
-            }
+
+            // Display the total sum of all entered numbers
+            Console.WriteLine("The sum of the numbers is: " + sum);
         }
     }
 }

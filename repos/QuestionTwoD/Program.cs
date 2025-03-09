@@ -1,40 +1,54 @@
 ﻿using System;
 
-namespace SumCalculatorApp
+namespace NumberGuessingGame
 {
     class Program
     {
         static void Main()
         {
-            // Initialize a variable to store the sum of entered numbers
-            int sum = 0;
+            // Create an instance of the Random class to generate a random number
+            Random randomNumber = new Random();
 
-            // Infinite loop to continuously ask for user input
+            // Generate a random number between 1 and 10
+            int randomNum = randomNumber.Next(1, 11); // Upper bound is exclusive, so use 11
+
+            // Display the random number (for debugging; remove this in actual gameplay)
+            // Console.WriteLine(randomNum);
+
+            // Set the number of trials allowed
+            int trial = 4;
+
+            // Infinite loop for user attempts
             while (true)
             {
-                Console.WriteLine("Enter a number (or type 'ok' to finish):");
-                string value = Console.ReadLine();
+                Console.WriteLine("Pick a number between 1 and 10:");
+                int number;
 
-                // Check if the user entered "ok" to stop the loop
-                if (value.ToLower() == "ok")
+                // Validate user input to ensure it's a number
+                if (!int.TryParse(Console.ReadLine(), out number))
                 {
+                    Console.WriteLine("Invalid input. Please enter a number.");
+                    continue; // Restart loop
+                }
+
+                trial--; // Reduce trial count after each attempt
+
+                // Check if the guessed number is correct
+                if (number == randomNum)
+                {
+                    Console.WriteLine("You Won!");
+                    break; // Exit the loop if guessed correctly
+                }
+
+                // Check if trials are exhausted
+                if (trial == 0)
+                {
+                    Console.WriteLine($"You Lost. The correct number was {randomNum}. ");
                     break; // Exit the loop
                 }
 
-                try
-                {
-                    // Convert user input to an integer and add it to the sum
-                    int num = Convert.ToInt32(value);
-                    sum += num;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Invalid input. Please enter a valid number or type 'ok' to stop.");
-                }
+                Console.WriteLine($"Wrong guess! You have {trial} attempts left.");
             }
-
-            // Display the total sum of all entered numbers
-            Console.WriteLine("The sum of the numbers is: " + sum);
         }
     }
 }
