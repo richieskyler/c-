@@ -18,6 +18,7 @@ namespace DomainLayer.DTO.PostDto
         public string? Content { get; set; }
 
         // Foreign key property - stores the ID value of the related Category
+        [JsonIgnore]
         public Category? Category { get; set; }
         [ForeignKey("CategoryId")]
         public int CategoryId { get; set; }
