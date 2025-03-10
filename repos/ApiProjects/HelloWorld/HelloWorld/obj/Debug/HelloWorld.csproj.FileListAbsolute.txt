@@ -1,0 +1,7 @@
+C:\Users\richard.oloyede\source\repos\ETL\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\richard.oloyede\source\repos\ETL\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\richard.oloyede\source\repos\ETL\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\richard.oloyede\source\repos\ETL\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
+C:\Users\richard.oloyede\source\repos\ETL\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\richard.oloyede\source\repos\ETL\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\richard.oloyede\source\repos\ETL\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

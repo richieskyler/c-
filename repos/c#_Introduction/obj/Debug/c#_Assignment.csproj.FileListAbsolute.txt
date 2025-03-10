@@ -1,0 +1,14 @@
+C:\Users\Richard\source\repos\c#_Assignment\bin\Debug\c#_Assignment.exe.config
+C:\Users\Richard\source\repos\c#_Assignment\bin\Debug\c#_Assignment.exe
+C:\Users\Richard\source\repos\c#_Assignment\bin\Debug\c#_Assignment.pdb
+C:\Users\Richard\source\repos\c#_Assignment\obj\Debug\c#_Assignment.csproj.AssemblyReference.cache
+C:\Users\Richard\source\repos\c#_Assignment\obj\Debug\c#_Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Richard\source\repos\c#_Assignment\obj\Debug\c#_Assignment.exe
+C:\Users\Richard\source\repos\c#_Assignment\obj\Debug\c#_Assignment.pdb
+C:\Users\Richard\Desktop\C#\c-\repos\c#_Assignment\bin\Debug\c#_Assignment.exe.config
+C:\Users\Richard\Desktop\C#\c-\repos\c#_Assignment\bin\Debug\c#_Assignment.exe
+C:\Users\Richard\Desktop\C#\c-\repos\c#_Assignment\bin\Debug\c#_Assignment.pdb
+C:\Users\Richard\Desktop\C#\c-\repos\c#_Assignment\obj\Debug\c#_Assignment.csproj.AssemblyReference.cache
+C:\Users\Richard\Desktop\C#\c-\repos\c#_Assignment\obj\Debug\c#_Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Richard\Desktop\C#\c-\repos\c#_Assignment\obj\Debug\c#_Assignment.exe
+C:\Users\Richard\Desktop\C#\c-\repos\c#_Assignment\obj\Debug\c#_Assignment.pdb
